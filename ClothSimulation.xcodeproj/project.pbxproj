@@ -10,6 +10,7 @@
 		1360B7321C4192620026F827 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1360B7311C4192620026F827 /* main.cpp */; };
 		1360B7391C4193D40026F827 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360B7381C4193D40026F827 /* OpenGL.framework */; };
 		1360B73B1C4194150026F827 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360B73A1C4194150026F827 /* GLUT.framework */; };
+		1360B73F1C419A0E0026F827 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1360B73D1C419A0E0026F827 /* Window.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		1360B7311C4192620026F827 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1360B7381C4193D40026F827 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		1360B73A1C4194150026F827 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		1360B73D1C419A0E0026F827 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = Window/Window.cpp; sourceTree = "<group>"; };
+		1360B73E1C419A0E0026F827 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Window.hpp; path = Window/Window.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				1360B7311C4192620026F827 /* main.cpp */,
+				1360B73C1C4199ED0026F827 /* Window */,
 			);
 			path = ClothSimulation;
+			sourceTree = "<group>";
+		};
+		1360B73C1C4199ED0026F827 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				1360B73D1C419A0E0026F827 /* Window.cpp */,
+				1360B73E1C419A0E0026F827 /* Window.hpp */,
+			);
+			name = Window;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1360B7321C4192620026F827 /* main.cpp in Sources */,
+				1360B73F1C419A0E0026F827 /* Window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +259,7 @@
 				1360B7371C4192620026F827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
