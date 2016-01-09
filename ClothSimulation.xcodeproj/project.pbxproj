@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1360B7321C4192620026F827 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1360B7311C4192620026F827 /* main.cpp */; };
+		1360B7391C4193D40026F827 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360B7381C4193D40026F827 /* OpenGL.framework */; };
+		1360B73B1C4194150026F827 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360B73A1C4194150026F827 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		1360B72E1C4192620026F827 /* ClothSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClothSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
 		1360B7311C4192620026F827 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1360B7381C4193D40026F827 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1360B73A1C4194150026F827 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1360B73B1C4194150026F827 /* GLUT.framework in Frameworks */,
+				1360B7391C4193D40026F827 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,8 @@
 		1360B7251C4192620026F827 = {
 			isa = PBXGroup;
 			children = (
+				1360B73A1C4194150026F827 /* GLUT.framework */,
+				1360B7381C4193D40026F827 /* OpenGL.framework */,
 				1360B7301C4192620026F827 /* ClothSimulation */,
 				1360B72F1C4192620026F827 /* Products */,
 			);
