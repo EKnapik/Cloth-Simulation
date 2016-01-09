@@ -19,9 +19,8 @@ void Window::renderToWindow(void) {
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, eBuffer);
     
     // pass the vertex data info
-    int step = 0;
     glEnableVertexAttribArray(vertPos);
-    glVertexAttribPointer(vertPos, 3, GL_FLOAT, GL_FALSE, step, 0);
+    glVertexAttribPointer(vertPos, 3, GL_FLOAT, GL_FALSE, 0, 0);
     
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, 0);
 }
@@ -60,17 +59,17 @@ void Window::setVertexData(void) {
     vertexData[1] = 1.0;
     vertexData[2] = 0.0;
     
-    vertexData[5] = -1.0;
-    vertexData[6] = -1.0;
-    vertexData[7] = 0.0;
+    vertexData[3] = -1.0;
+    vertexData[4] = -1.0;
+    vertexData[5] = 0.0;
     
-    vertexData[10] = 1.0;
-    vertexData[11] = -1.0;
-    vertexData[12] = 0.0;
+    vertexData[6] = 1.0;
+    vertexData[7] = -1.0;
+    vertexData[8] = 0.0;
 
-    vertexData[15] = 1.0;
-    vertexData[16] = 1.0;
-    vertexData[17] = 0.0;
+    vertexData[9] = 1.0;
+    vertexData[10] = 1.0;
+    vertexData[11] = 0.0;
 
     
     numVerts = 4;

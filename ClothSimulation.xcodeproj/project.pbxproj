@@ -11,17 +11,22 @@
 		1360B7391C4193D40026F827 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360B7381C4193D40026F827 /* OpenGL.framework */; };
 		1360B73B1C4194150026F827 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1360B73A1C4194150026F827 /* GLUT.framework */; };
 		1360B73F1C419A0E0026F827 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1360B73D1C419A0E0026F827 /* Window.cpp */; };
+		1360B7441C41A5300026F827 /* shaderSetup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1360B7421C41A5300026F827 /* shaderSetup.cpp */; };
+		1360B7451C41A8190026F827 /* simpleCloth.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1360B7401C41A35A0026F827 /* simpleCloth.vert */; };
+		1360B7461C41A8190026F827 /* simpleCloth.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1360B7411C41A3CC0026F827 /* simpleCloth.frag */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1360B72C1C4192620026F827 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				1360B7451C41A8190026F827 /* simpleCloth.vert in CopyFiles */,
+				1360B7461C41A8190026F827 /* simpleCloth.frag in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -32,6 +37,10 @@
 		1360B73A1C4194150026F827 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		1360B73D1C419A0E0026F827 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = Window/Window.cpp; sourceTree = "<group>"; };
 		1360B73E1C419A0E0026F827 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Window.hpp; path = Window/Window.hpp; sourceTree = "<group>"; };
+		1360B7401C41A35A0026F827 /* simpleCloth.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simpleCloth.vert; path = Window/simpleCloth.vert; sourceTree = "<group>"; };
+		1360B7411C41A3CC0026F827 /* simpleCloth.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simpleCloth.frag; path = Window/simpleCloth.frag; sourceTree = "<group>"; };
+		1360B7421C41A5300026F827 /* shaderSetup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shaderSetup.cpp; sourceTree = "<group>"; };
+		1360B7431C41A5300026F827 /* shaderSetup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shaderSetup.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,8 @@
 		1360B7301C4192620026F827 /* ClothSimulation */ = {
 			isa = PBXGroup;
 			children = (
+				1360B7421C41A5300026F827 /* shaderSetup.cpp */,
+				1360B7431C41A5300026F827 /* shaderSetup.hpp */,
 				1360B7311C4192620026F827 /* main.cpp */,
 				1360B73C1C4199ED0026F827 /* Window */,
 			);
@@ -79,6 +90,8 @@
 			children = (
 				1360B73D1C419A0E0026F827 /* Window.cpp */,
 				1360B73E1C419A0E0026F827 /* Window.hpp */,
+				1360B7401C41A35A0026F827 /* simpleCloth.vert */,
+				1360B7411C41A3CC0026F827 /* simpleCloth.frag */,
 			);
 			name = Window;
 			sourceTree = "<group>";
@@ -141,6 +154,7 @@
 			files = (
 				1360B7321C4192620026F827 /* main.cpp in Sources */,
 				1360B73F1C419A0E0026F827 /* Window.cpp in Sources */,
+				1360B7441C41A5300026F827 /* shaderSetup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

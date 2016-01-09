@@ -9,8 +9,9 @@
 #ifndef Window_hpp
 #define Window_hpp
 
-#include <stdio.h>
+#include <cstdio>
 #include <OpenGL/gl.h>
+#include "shaderSetup.hpp"
 
 
 class Window {
@@ -25,7 +26,7 @@ private:
     GLuint vBuffer, eBuffer;
     GLuint vertPos;
     GLuint numVerts;
-    GLfloat vertexData[20];
+    GLfloat vertexData[12];
     GLushort elementData[6];
 };
 #endif /* Window_hpp */

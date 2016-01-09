@@ -9,11 +9,14 @@
 #include <iostream>
 #include <GLUT/GLUT.h>
 #include <OpenGL/gl.h>
+#include "Window.hpp"
 
 #define WINDOW_HEIGHT 512
 #define WINDOW_WIDTH 512
 void initOpenGL(void);
 void display(void);
+
+Window *window;
 
 int main(int argc, char * argv[]) {
     
@@ -26,6 +29,8 @@ int main(int argc, char * argv[]) {
     
     initOpenGL();
     
+    
+    window = new Window();
     
     glutMainLoop();
     return 0;
@@ -49,6 +54,7 @@ void display(void) {
     
     // poll events
     // bind and draw
+    window->renderToWindow();
     
     glutSwapBuffers();
     glutPostRedisplay();
