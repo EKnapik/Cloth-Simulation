@@ -14,6 +14,9 @@
 		1360B7441C41A5300026F827 /* shaderSetup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1360B7421C41A5300026F827 /* shaderSetup.cpp */; };
 		1360B7451C41A8190026F827 /* simpleCloth.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1360B7401C41A35A0026F827 /* simpleCloth.vert */; };
 		1360B7461C41A8190026F827 /* simpleCloth.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1360B7411C41A3CC0026F827 /* simpleCloth.frag */; };
+		13709E0D1C4217E50070C7F7 /* VectorBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13709E0B1C4217E50070C7F7 /* VectorBase.cpp */; };
+		13709E101C4217FD0070C7F7 /* Vec4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13709E0E1C4217FD0070C7F7 /* Vec4.cpp */; };
+		13709E131C42180A0070C7F7 /* Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13709E111C42180A0070C7F7 /* Vec3.cpp */; };
 		13B99AED1C41E32800FCEBFC /* Spring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13B99AEB1C41E32800FCEBFC /* Spring.cpp */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,12 @@
 		1360B7411C41A3CC0026F827 /* simpleCloth.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simpleCloth.frag; path = Window/simpleCloth.frag; sourceTree = "<group>"; };
 		1360B7421C41A5300026F827 /* shaderSetup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shaderSetup.cpp; sourceTree = "<group>"; };
 		1360B7431C41A5300026F827 /* shaderSetup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shaderSetup.hpp; sourceTree = "<group>"; };
+		13709E0B1C4217E50070C7F7 /* VectorBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VectorBase.cpp; path = VectorBase/VectorBase.cpp; sourceTree = "<group>"; };
+		13709E0C1C4217E50070C7F7 /* VectorBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VectorBase.hpp; path = VectorBase/VectorBase.hpp; sourceTree = "<group>"; };
+		13709E0E1C4217FD0070C7F7 /* Vec4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec4.cpp; path = Vec4/Vec4.cpp; sourceTree = "<group>"; };
+		13709E0F1C4217FD0070C7F7 /* Vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vec4.hpp; path = Vec4/Vec4.hpp; sourceTree = "<group>"; };
+		13709E111C42180A0070C7F7 /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec3.cpp; path = Vec3/Vec3.cpp; sourceTree = "<group>"; };
+		13709E121C42180A0070C7F7 /* Vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vec3.hpp; path = Vec3/Vec3.hpp; sourceTree = "<group>"; };
 		13B99AEB1C41E32800FCEBFC /* Spring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Spring.cpp; path = Spring/Spring.cpp; sourceTree = "<group>"; };
 		13B99AEC1C41E32800FCEBFC /* Spring.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Spring.hpp; path = Spring/Spring.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +89,9 @@
 		1360B7301C4192620026F827 /* ClothSimulation */ = {
 			isa = PBXGroup;
 			children = (
+				13709E071C4217AA0070C7F7 /* VectorBase */,
+				13709E061C4217A50070C7F7 /* Vec4 */,
+				13709E051C42179E0070C7F7 /* Vec3 */,
 				13B99AEA1C41E2F600FCEBFC /* Cloth */,
 				13B99AE91C41E2E800FCEBFC /* Pendulumn */,
 				13B99AE81C41E2D200FCEBFC /* Spring */,
@@ -100,6 +112,33 @@
 				1360B7411C41A3CC0026F827 /* simpleCloth.frag */,
 			);
 			name = Window;
+			sourceTree = "<group>";
+		};
+		13709E051C42179E0070C7F7 /* Vec3 */ = {
+			isa = PBXGroup;
+			children = (
+				13709E111C42180A0070C7F7 /* Vec3.cpp */,
+				13709E121C42180A0070C7F7 /* Vec3.hpp */,
+			);
+			name = Vec3;
+			sourceTree = "<group>";
+		};
+		13709E061C4217A50070C7F7 /* Vec4 */ = {
+			isa = PBXGroup;
+			children = (
+				13709E0E1C4217FD0070C7F7 /* Vec4.cpp */,
+				13709E0F1C4217FD0070C7F7 /* Vec4.hpp */,
+			);
+			name = Vec4;
+			sourceTree = "<group>";
+		};
+		13709E071C4217AA0070C7F7 /* VectorBase */ = {
+			isa = PBXGroup;
+			children = (
+				13709E0B1C4217E50070C7F7 /* VectorBase.cpp */,
+				13709E0C1C4217E50070C7F7 /* VectorBase.hpp */,
+			);
+			name = VectorBase;
 			sourceTree = "<group>";
 		};
 		13B99AE81C41E2D200FCEBFC /* Spring */ = {
@@ -183,7 +222,10 @@
 			files = (
 				1360B7321C4192620026F827 /* main.cpp in Sources */,
 				1360B73F1C419A0E0026F827 /* Window.cpp in Sources */,
+				13709E131C42180A0070C7F7 /* Vec3.cpp in Sources */,
 				13B99AED1C41E32800FCEBFC /* Spring.cpp in Sources */,
+				13709E101C4217FD0070C7F7 /* Vec4.cpp in Sources */,
+				13709E0D1C4217E50070C7F7 /* VectorBase.cpp in Sources */,
 				1360B7441C41A5300026F827 /* shaderSetup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
