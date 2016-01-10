@@ -29,7 +29,6 @@ int main(int argc, char * argv[]) {
     
     initOpenGL();
     
-    
     window = new Window();
     
     glutMainLoop();

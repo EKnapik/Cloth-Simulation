@@ -14,6 +14,7 @@
 		1360B7441C41A5300026F827 /* shaderSetup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1360B7421C41A5300026F827 /* shaderSetup.cpp */; };
 		1360B7451C41A8190026F827 /* simpleCloth.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1360B7401C41A35A0026F827 /* simpleCloth.vert */; };
 		1360B7461C41A8190026F827 /* simpleCloth.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1360B7411C41A3CC0026F827 /* simpleCloth.frag */; };
+		13B99AED1C41E32800FCEBFC /* Spring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13B99AEB1C41E32800FCEBFC /* Spring.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		1360B7411C41A3CC0026F827 /* simpleCloth.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simpleCloth.frag; path = Window/simpleCloth.frag; sourceTree = "<group>"; };
 		1360B7421C41A5300026F827 /* shaderSetup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shaderSetup.cpp; sourceTree = "<group>"; };
 		1360B7431C41A5300026F827 /* shaderSetup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shaderSetup.hpp; sourceTree = "<group>"; };
+		13B99AEB1C41E32800FCEBFC /* Spring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Spring.cpp; path = Spring/Spring.cpp; sourceTree = "<group>"; };
+		13B99AEC1C41E32800FCEBFC /* Spring.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Spring.hpp; path = Spring/Spring.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,9 @@
 		1360B7301C4192620026F827 /* ClothSimulation */ = {
 			isa = PBXGroup;
 			children = (
+				13B99AEA1C41E2F600FCEBFC /* Cloth */,
+				13B99AE91C41E2E800FCEBFC /* Pendulumn */,
+				13B99AE81C41E2D200FCEBFC /* Spring */,
 				1360B7421C41A5300026F827 /* shaderSetup.cpp */,
 				1360B7431C41A5300026F827 /* shaderSetup.hpp */,
 				1360B7311C4192620026F827 /* main.cpp */,
@@ -94,6 +100,29 @@
 				1360B7411C41A3CC0026F827 /* simpleCloth.frag */,
 			);
 			name = Window;
+			sourceTree = "<group>";
+		};
+		13B99AE81C41E2D200FCEBFC /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				13B99AEB1C41E32800FCEBFC /* Spring.cpp */,
+				13B99AEC1C41E32800FCEBFC /* Spring.hpp */,
+			);
+			name = Spring;
+			sourceTree = "<group>";
+		};
+		13B99AE91C41E2E800FCEBFC /* Pendulumn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pendulumn;
+			sourceTree = "<group>";
+		};
+		13B99AEA1C41E2F600FCEBFC /* Cloth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cloth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +183,7 @@
 			files = (
 				1360B7321C4192620026F827 /* main.cpp in Sources */,
 				1360B73F1C419A0E0026F827 /* Window.cpp in Sources */,
+				13B99AED1C41E32800FCEBFC /* Spring.cpp in Sources */,
 				1360B7441C41A5300026F827 /* shaderSetup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
