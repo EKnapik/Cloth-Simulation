@@ -9,6 +9,7 @@
 #include <iostream>
 #include <GLUT/GLUT.h>
 #include <OpenGL/gl.h>
+#include "glm/vec3.hpp"
 #include "Window.hpp"
 
 #define WINDOW_HEIGHT 512
@@ -19,7 +20,8 @@ void display(void);
 Window *window;
 
 int main(int argc, char * argv[]) {
-    
+    glm::vec3 test = glm::vec3(0.0, 1.0, 2.0);
+    std::cout << test.y << std::endl;
     // Setup window statically because GLUT is poor at window and display render
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);

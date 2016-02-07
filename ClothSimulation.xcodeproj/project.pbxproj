@@ -53,6 +53,7 @@
 		13709E121C42180A0070C7F7 /* Vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Vec3.hpp; path = Vec3/Vec3.hpp; sourceTree = "<group>"; };
 		13B99AEB1C41E32800FCEBFC /* Spring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Spring.cpp; path = Spring/Spring.cpp; sourceTree = "<group>"; };
 		13B99AEC1C41E32800FCEBFC /* Spring.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Spring.hpp; path = Spring/Spring.hpp; sourceTree = "<group>"; };
+		13D8EC851C66DA4E00A5358E /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		1360B7301C4192620026F827 /* ClothSimulation */ = {
 			isa = PBXGroup;
 			children = (
+				13D8EC851C66DA4E00A5358E /* glm */,
 				13709E071C4217AA0070C7F7 /* VectorBase */,
 				13709E061C4217A50070C7F7 /* Vec4 */,
 				13709E051C42179E0070C7F7 /* Vec3 */,
